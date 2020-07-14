@@ -10,7 +10,7 @@ This repository contains the concept proposed in this [original contribution pro
 To install the template just type
 
 ```bash
-conan config install https://github.com/alacasta/beautified-conan-info-dot-template.git
+$ conan config install https://github.com/alacasta/beautified-conan-info-dot-template.git -sf templates/output/ -tf templates/output/
 ```
 
 From that moment, the template is install and the output commands for
@@ -37,9 +37,9 @@ dot graph_filename.dot -Tpng > graph_in_png_filename.png
 
 In `example/conanfile.py` there is a dummy-project `conanfile` which contains the following dependency diagraph
 
-![Default Output][example/default-conan-info-dot-template.png]
+![Default Output][/example/default-conan-info-dot-template.png?raw=true]
 
 With the _beautified conan info dot template_ provided in this repository, the ouput is like follows
 
-![Beautified Output][example/beautified-conan-info-dot-template.png]
+![Beautified Output][/example/beautified-conan-info-dot-template.png?raw=true]
 
