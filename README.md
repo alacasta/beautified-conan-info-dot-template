@@ -37,9 +37,9 @@ dot graph_filename.dot -Tpng > graph_in_png_filename.png
 
 In `example/conanfile.py` there is a dummy-project `conanfile` which contains the following dependency diagraph
 
-![Default Output][/example/default-conan-info-dot-template.png?raw=true]
+![Default Output](/example/default-conan-info-dot-template.png?raw=true)
 
 With the _beautified conan info dot template_ provided in this repository, the ouput is like follows
 
-![Beautified Output][/example/beautified-conan-info-dot-template.png?raw=true]
+![Beautified Output](/example/beautified-conan-info-dot-template.png?raw=true)
 
