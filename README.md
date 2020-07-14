@@ -10,7 +10,7 @@ This repository contains the concept proposed in this [original contribution pro
 To install the template just type
 
 ```bash
-$ conan config install https://github.com/alacasta/beautified-conan-info-dot-template.git -sf templates/output/ -tf templates/output/
+conan config install https://github.com/alacasta/beautified-conan-info-dot-template.git -sf templates/output/ -tf templates/output/
 ```
 
 From that moment, the template is install and the output commands for
