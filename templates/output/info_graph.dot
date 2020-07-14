@@ -1,0 +1,28 @@
+digraph {
+    graph [
+      bgcolor = white,
+      style = "filled",
+      rankdir = TD,
+      splines = ortho,
+      ranksep = 1,
+      nodesep = 0.7
+    ];
+    node [
+      style = "filled",
+      fontname = "Helvetica",
+      fontsize = "18",
+      shape=rect
+    ];
+    edge [
+      style = solid
+    ];
+    {%- for node in graph.nodes %}
+       "{{ node.label }}" [ fillcolor={% if node.is_build_requires %}lightyellow{% else %}azure{% endif %}, color={% if node.is_build_requires %}gold{% else %}dodgerblue{% endif %} label=<
+       <table border="0" cellborder="0" cellspacing="0">
+       <tr><td align="left"><b>"{{ node.short_label }}"</b></td></tr>
+     </table>>];
+    {%- endfor %}        
+    {%- for src, dst in graph.edges %}
+        "{{ src.label }}" -> "{{ dst.label }}"
+    {%- endfor %}
+}
